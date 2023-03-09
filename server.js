@@ -19,7 +19,7 @@ export default async function (request, context) {
     storeDomain: `https://${env.PUBLIC_STORE_DOMAIN}`,
     storefrontApiVersion: env.PUBLIC_STOREFRONT_API_VERSION || "2023-01",
     storefrontId: env.PUBLIC_STOREFRONT_ID,
-    requestGroupId: request.headers.get("request-id"),
+    requestGroupId: request.headers.get("x-nf-request-id"),
   });
 
   const requestHandler = await createRequestHandler({
