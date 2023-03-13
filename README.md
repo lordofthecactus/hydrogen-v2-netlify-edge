@@ -39,11 +39,9 @@ netlify env:import .env
 Ensure all packages are installed by running:
 
 ```sh
-npm install
+npm install --legacy-peer-deps
 ```
 
-
-Open up [http://localhost:8888](http://localhost:8888), and you're ready to go!
 
 ### Serve your site locally
 
@@ -53,14 +51,8 @@ Run
 npm netlify serve
 ```
 
-to serve your site locally at [http://localhost:8888](http://localhost:8888).
 
-
-Note: This command below does not work since it will try to use remix server and won't go through the server.js configuration
-
-```sh
-netlify dev
-```
+Open up [http://localhost:8888](http://localhost:8888), and you're ready to go!
 
 ## Excluding routes
 

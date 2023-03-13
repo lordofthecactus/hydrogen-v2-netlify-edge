@@ -5,6 +5,7 @@
     "build": "remix build",
     "predev": "rimraf ./.netlify/edge-functions/",
     "dev": "remix dev",
+    "env:import": "netlify env:import .env",
     "start": "netlify serve",
     "typecheck": "tsc -b"
   },
